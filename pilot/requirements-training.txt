@@ -1,0 +1,6 @@
+-r requirements.txt
+# Install a matched torch/torchvision pair for your own CPU or GPU environment.
+numpy
+torch
+torchvision
+# matplotlib is optional, used only by eval_confusion.py --plot.
