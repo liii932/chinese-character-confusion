@@ -1,0 +1,650 @@
+[
+  {
+    "class_id_true": 0,
+    "char_true": "己",
+    "class_id_confuse": 1,
+    "char_confuse": "已",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 1,
+    "char_true": "已",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 2,
+    "char_true": "巳",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 3,
+    "char_true": "土",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 4,
+    "char_true": "士",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 5,
+    "char_true": "未",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 6,
+    "char_true": "末",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 7,
+    "char_true": "日",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 8,
+    "char_true": "曰",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 9,
+    "char_true": "戊",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 10,
+    "char_true": "戌",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 11,
+    "char_true": "戍",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 12,
+    "char_true": "木",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 13,
+    "char_true": "本",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 14,
+    "char_true": "术",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 15,
+    "char_true": "朱",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 16,
+    "char_true": "大",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 17,
+    "char_true": "太",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 18,
+    "char_true": "犬",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 19,
+    "char_true": "刀",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 20,
+    "char_true": "刃",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 21,
+    "char_true": "鸟",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 22,
+    "char_true": "乌",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 23,
+    "char_true": "王",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 24,
+    "char_true": "玉",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 25,
+    "char_true": "主",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 26,
+    "char_true": "由",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 27,
+    "char_true": "甲",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 28,
+    "char_true": "申",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 29,
+    "char_true": "田",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 30,
+    "char_true": "茶",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 31,
+    "char_true": "荼",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 32,
+    "char_true": "情",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 33,
+    "char_true": "晴",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 34,
+    "char_true": "清",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 35,
+    "char_true": "请",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 36,
+    "char_true": "睛",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 37,
+    "char_true": "沮",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 38,
+    "char_true": "狙",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 39,
+    "char_true": "阻",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 40,
+    "char_true": "租",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 41,
+    "char_true": "祖",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 42,
+    "char_true": "抹",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 43,
+    "char_true": "沫",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 44,
+    "char_true": "昧",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 45,
+    "char_true": "妹",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 46,
+    "char_true": "侍",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 47,
+    "char_true": "待",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 48,
+    "char_true": "持",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 49,
+    "char_true": "特",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 50,
+    "char_true": "汪",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 51,
+    "char_true": "枉",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 52,
+    "char_true": "裸",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 53,
+    "char_true": "棵",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 54,
+    "char_true": "踝",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 55,
+    "char_true": "菅",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 56,
+    "char_true": "管",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 57,
+    "char_true": "辩",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 58,
+    "char_true": "辨",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 59,
+    "char_true": "辫",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 60,
+    "char_true": "瓣",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 61,
+    "char_true": "暮",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 62,
+    "char_true": "幕",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 63,
+    "char_true": "墓",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 64,
+    "char_true": "慕",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 65,
+    "char_true": "蓦",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 66,
+    "char_true": "赢",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 67,
+    "char_true": "羸",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 68,
+    "char_true": "嬴",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 69,
+    "char_true": "蠃",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 70,
+    "char_true": "崇",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 71,
+    "char_true": "祟",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 72,
+    "char_true": "微",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 73,
+    "char_true": "徽",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 74,
+    "char_true": "翼",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 75,
+    "char_true": "冀",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 76,
+    "char_true": "塞",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 77,
+    "char_true": "寨",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 78,
+    "char_true": "寒",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 79,
+    "char_true": "籍",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  },
+  {
+    "class_id_true": 80,
+    "char_true": "藉",
+    "class_id_confuse": 0,
+    "char_confuse": "己",
+    "count": 0,
+    "valid": false
+  }
+]

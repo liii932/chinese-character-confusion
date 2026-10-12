@@ -19,3 +19,8 @@ __pycache__/
 /training/runs/
 /training/.verification/
 /colab/dist/
+
+# Independent pilot outputs; never commit generated training data or checkpoints.
+/pilot/dataset_81*/
+/pilot/checkpoints_a*/
+/pilot/.verification/
