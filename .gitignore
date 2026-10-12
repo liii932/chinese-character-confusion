@@ -1,14 +1,24 @@
 # Share only the current character-recognition project materials.
 /*
 !/.gitignore
+!/.gitattributes
 !/形近字识别项目设计书.md
 !/笔画微差类（长短、出头、点撇微殊）.md
+!/ppt设计.md
 !/pilot/
+!/training/
+!/colab/
 
 # Local Python environments and caches are not shared.
 .venv/
 __pycache__/
 *.py[cod]
+
+# Generated datasets, checkpoints, upload bundles and local verification outputs.
+/training/data/
+/training/runs/
+/training/.verification/
+/colab/dist/
 
 # Independent pilot outputs; never commit generated training data or checkpoints.
 /pilot/dataset_81*/

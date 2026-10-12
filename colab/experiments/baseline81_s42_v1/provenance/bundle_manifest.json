@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "files": {
+    "pilot/characters.json": "1158fbcf096ab6ac962713ab924e61272470e408bb145195cd097f0374cab7d8",
+    "pilot/render_samples.py": "bcd73b2a399b50ad6606540994c10681fdc12c1be5f896d04a8b085882f0e221",
+    "pilot/requirements.txt": "45372af06424941a281e7df68f6f18288f2d2206fd441f42937a420f325103ef",
+    "pilot/fonts/SourceHanSansSC-Regular.otf": "f1d8611151880c6c336aabeac4640ef434fa13cbfbf1ffe82d0a71b2a5637256",
+    "pilot/fonts/LICENSE.txt": "fcac737e761ec63dbfbdce11030a1780161920d80315edba9c8beff1c2bac5a2",
+    "pilot/fonts/source.json": "14598d43157ec04855f8f9fe70cf1582ac76d0c6e4d769457c78e15fb3470bf2",
+    "training/__init__.py": "35a2caf1f6f1da8c3093a2f658be862bf4f363be00e880e09680e8b389009b68",
+    "training/prepare_data.py": "25e6e69b3e9830f2dbc0544c11fc26ce0fa8cf64d4f2109dacc51461f85605f0",
+    "training/io_utils.py": "6e0effced2c2a35bd474fba9925404bf84182d8c39348e365052bc7d0d9cb183",
+    "training/train.py": "f31aece79c2322772139f2f299aa88dc272ec7d02ef3308bcaeeeb48e8cd4197",
+    "training/requirements-colab.txt": "4d478e7bed40160e3be42533793cadd394f53b2c0fc9cfeaca7c1d3e6d71a408",
+    "training/test_pipeline.py": "fba4faedc720ba6e0205b2cdf6d63d51592cc5c5bd3566e57db4e060a3fe2fc0",
+    "colab/README.md": "a5814fa45f76d5f4f332194d2e2b8844fcfdd6a97b13dca83a7aa4a5991b82ba",
+    "colab/hanzi81_baseline.ipynb": "6586ef14acf425bedc8a2ef52767a807eaf58f6c4ad5d20d1672b453ff6bad11",
+    "colab/VALIDATION.md": "9f97f40a4a8956fcd35d34669268ec5d019a924754f18193badb9dee43b68d1a",
+    "colab/make_notebook.py": "55953a374d5238bc60b97517a330910147dea31de7b64669bb90703e76fa6425",
+    "colab/build_bundle.py": "d97753c8c3146f4989b90a4663dfe082d215b1bda322ee29dcc90a1535578a3c",
+    "training/data/baseline81-v2/manifest.json": "6a2d237ae03ed219f76c2d4cf827eeb6b9c852c88c54a5a77d6ca34706d84f86",
+    "training/data/baseline81-v2/conditions.json": "d9e57a7f0618d536109c349f107b5ca1c03aeb033b7731332ff0b1e04700b630",
+    "training/data/baseline81-v2/labels.json": "a42f944bcd85f43c05da13599efd18c8a64a9b58c90a7828d504405eef79c992",
+    "training/data/baseline81-v2/train.npz": "8b076bfa8ac29d24f319e1e721e3bac7fc3120e737c968376a52a47d07f2e510",
+    "training/data/baseline81-v2/val_graph.npz": "e0d0c6146472f217ad88767b1ed18d3c825736390726b0eaeaae51528a52ec49",
+    "training/data/baseline81-v2/val_select.npz": "fa3fc0728c6411c4dfc421e8fb9e6937748d51c50d152042de1af9d0646aea05",
+    "training/data/baseline81-v2/test.npz": "21268c188d5f2e5d1be19d369360a21afa0f80d68843e24200a70189ad71140c"
+  }
+}

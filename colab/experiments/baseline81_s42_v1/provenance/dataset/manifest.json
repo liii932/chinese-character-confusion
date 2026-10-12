@@ -1,0 +1,236 @@
+{
+  "recipe": {
+    "schema": 1,
+    "purpose": "81-character baseline development",
+    "seed": 20261012,
+    "per_sigma_counts": {
+      "train": 64,
+      "val_graph": 32,
+      "val_select": 32,
+      "test": 64
+    },
+    "characters_sha256": "1158fbcf096ab6ac962713ab924e61272470e408bb145195cd097f0374cab7d8",
+    "font_sha256": "f1d8611151880c6c336aabeac4640ef434fa13cbfbf1ffe82d0a71b2a5637256",
+    "renderer_sha256": "bcd73b2a399b50ad6606540994c10681fdc12c1be5f896d04a8b085882f0e221",
+    "builder_sha256": "25e6e69b3e9830f2dbc0544c11fc26ce0fa8cf64d4f2109dacc51461f85605f0",
+    "size": 64,
+    "mode": "L",
+    "scale": 4,
+    "font_size_high": 192,
+    "baseline_high": [
+      32,
+      200
+    ],
+    "union_bbox_high": [
+      0,
+      -164,
+      192,
+      20
+    ],
+    "position_grid": {
+      "min": -3,
+      "max": 3,
+      "step": 0.25
+    },
+    "sigmas": [
+      0,
+      0.5,
+      1.0
+    ],
+    "normalization": "(uint8 / 255 - 0.5) / 0.5",
+    "allocation": "per split/sigma/axis: abs(mean)<=0.25 px, min<=-2.5 px, max>=2.5 px; deterministic rejection, max 10000 attempts",
+    "runtime": {
+      "python": "3.13.15",
+      "numpy": "2.5.3",
+      "Pillow": "12.3.0",
+      "fonttools": "4.66.1",
+      "freetype": "2.14.3"
+    }
+  },
+  "splits": {
+    "train": {
+      "images": 15552,
+      "per_class": 192
+    },
+    "val_graph": {
+      "images": 7776,
+      "per_class": 96
+    },
+    "val_select": {
+      "images": 7776,
+      "per_class": 96
+    },
+    "test": {
+      "images": 15552,
+      "per_class": 192
+    }
+  },
+  "audit": {
+    "unique_pixel_hashes": 46656,
+    "cross_label_duplicates": 0,
+    "cross_split_duplicates": 0,
+    "rejected_shared_conditions": [],
+    "position_distribution": {
+      "train": {
+        "0": {
+          "dx": {
+            "mean": 0.03125,
+            "min": -3.0,
+            "max": 3.0
+          },
+          "dy": {
+            "mean": -0.140625,
+            "min": -3.0,
+            "max": 3.0
+          }
+        },
+        "0.5": {
+          "dx": {
+            "mean": 0.140625,
+            "min": -3.0,
+            "max": 3.0
+          },
+          "dy": {
+            "mean": 0.12109375,
+            "min": -3.0,
+            "max": 3.0
+          }
+        },
+        "1.0": {
+          "dx": {
+            "mean": -0.03125,
+            "min": -3.0,
+            "max": 3.0
+          },
+          "dy": {
+            "mean": 0.01171875,
+            "min": -3.0,
+            "max": 3.0
+          }
+        }
+      },
+      "val_graph": {
+        "0": {
+          "dx": {
+            "mean": 0.078125,
+            "min": -3.0,
+            "max": 3.0
+          },
+          "dy": {
+            "mean": 0.015625,
+            "min": -3.0,
+            "max": 3.0
+          }
+        },
+        "0.5": {
+          "dx": {
+            "mean": -0.09375,
+            "min": -2.75,
+            "max": 3.0
+          },
+          "dy": {
+            "mean": -0.2265625,
+            "min": -3.0,
+            "max": 2.75
+          }
+        },
+        "1.0": {
+          "dx": {
+            "mean": -0.0625,
+            "min": -3.0,
+            "max": 2.75
+          },
+          "dy": {
+            "mean": -0.203125,
+            "min": -2.75,
+            "max": 2.75
+          }
+        }
+      },
+      "val_select": {
+        "0": {
+          "dx": {
+            "mean": -0.1484375,
+            "min": -3.0,
+            "max": 3.0
+          },
+          "dy": {
+            "mean": 0.0859375,
+            "min": -2.75,
+            "max": 3.0
+          }
+        },
+        "0.5": {
+          "dx": {
+            "mean": 0.1640625,
+            "min": -3.0,
+            "max": 3.0
+          },
+          "dy": {
+            "mean": 0.125,
+            "min": -3.0,
+            "max": 3.0
+          }
+        },
+        "1.0": {
+          "dx": {
+            "mean": -0.2265625,
+            "min": -3.0,
+            "max": 3.0
+          },
+          "dy": {
+            "mean": -0.0234375,
+            "min": -2.75,
+            "max": 2.75
+          }
+        }
+      },
+      "test": {
+        "0": {
+          "dx": {
+            "mean": -0.06640625,
+            "min": -3.0,
+            "max": 3.0
+          },
+          "dy": {
+            "mean": 0.16796875,
+            "min": -3.0,
+            "max": 3.0
+          }
+        },
+        "0.5": {
+          "dx": {
+            "mean": 0.1796875,
+            "min": -2.75,
+            "max": 3.0
+          },
+          "dy": {
+            "mean": 0.06640625,
+            "min": -3.0,
+            "max": 3.0
+          }
+        },
+        "1.0": {
+          "dx": {
+            "mean": -0.19921875,
+            "min": -3.0,
+            "max": 3.0
+          },
+          "dy": {
+            "mean": -0.140625,
+            "min": -3.0,
+            "max": 3.0
+          }
+        }
+      }
+    }
+  },
+  "files": {
+    "train.npz": "8b076bfa8ac29d24f319e1e721e3bac7fc3120e737c968376a52a47d07f2e510",
+    "val_graph.npz": "e0d0c6146472f217ad88767b1ed18d3c825736390726b0eaeaae51528a52ec49",
+    "val_select.npz": "fa3fc0728c6411c4dfc421e8fb9e6937748d51c50d152042de1af9d0646aea05",
+    "test.npz": "21268c188d5f2e5d1be19d369360a21afa0f80d68843e24200a70189ad71140c",
+    "conditions.json": "d9e57a7f0618d536109c349f107b5ca1c03aeb033b7731332ff0b1e04700b630",
+    "labels.json": "a42f944bcd85f43c05da13599efd18c8a64a9b58c90a7828d504405eef79c992"
+  }
+}
