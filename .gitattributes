@@ -1,0 +1,11 @@
+# Preserve exact bytes for inputs and snapshots identified by SHA-256.
+# Do not silently normalize existing LF/CRLF files during add or checkout.
+training/*.py -text
+training/requirements-colab.txt -text
+colab/*.py -text
+colab/*.ipynb -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+colab/experiments/**/provenance/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+pilot/characters.json -text
+pilot/render_samples.py -text
+pilot/requirements.txt -text
+pilot/fonts/* -text

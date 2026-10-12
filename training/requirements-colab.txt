@@ -1,0 +1,4 @@
+# Keep Colab's preinstalled, CUDA-compatible torch/torchvision pair.
+# These rendering versions match the inspected pilot images.
+Pillow==12.3.0
+fonttools==4.66.1

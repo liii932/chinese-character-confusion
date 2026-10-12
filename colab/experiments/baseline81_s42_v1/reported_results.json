@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "record_date": "2026-10-12",
+  "timezone": "Asia/Shanghai",
+  "run_id": "baseline81_s42_v1",
+  "evidence": {
+    "origin": "User-pasted outputs in this conversation, plus explicitly labelled local workflow metadata",
+    "drive_files_downloaded": false,
+    "checkpoint_file_downloaded": false,
+    "baseline_full_config_received": false,
+    "baseline_full_history_received": false,
+    "baseline_history_received_epochs": [1, 2],
+    "baseline_completion_confirmation": "已完成轮数： 40",
+    "completed_epochs": 40,
+    "test_evaluated": false,
+    "method_comparisons_run": false
+  },
+  "local_workflow_metadata": {
+    "dataset_id": "baseline81-v2",
+    "dataset_seed": 20261012,
+    "num_classes": 81,
+    "predefined_pairs": 54,
+    "split_counts": {
+      "train": 15552,
+      "val_select": 7776,
+      "val_graph": 7776,
+      "test": 15552
+    },
+    "baseline_settings_source": "Delivered notebook and training script defaults; not a downloaded main-run config.json",
+    "baseline_defaults": {
+      "mode": "baseline",
+      "seed": 42,
+      "epochs": 40,
+      "batch_size": 64,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "model": "resnet18-gray3x3-s1-no-maxpool-random",
+      "loss": "cross_entropy",
+      "optimizer": "AdamW",
+      "scheduler": "CosineAnnealingLR",
+      "eta_min": 0.00001,
+      "per_class": null
+    },
+    "font_sha256": "f1d8611151880c6c336aabeac4640ef434fa13cbfbf1ffe82d0a71b2a5637256",
+    "original_bundle_sha256": "e477bdd4894e6b585a2149d6f22db3948e5d6e20075d532fded5171d1b57dd35",
+    "drive_run_path": "/content/drive/MyDrive/hanzi81/runs/baseline81_s42_v1"
+  },
+  "gpu_probe_reported": {
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "gpu": "Tesla T4",
+    "total_memory_gib_rounded": 14.6,
+    "forward_output_shape": [2, 8, 62, 62]
+  },
+  "smoke_config_reported": {
+    "mode": "smoke",
+    "seed": 42,
+    "epochs": 1,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "per_class": 2,
+    "model": "resnet18-gray3x3-s1-no-maxpool-random",
+    "loss": "cross_entropy",
+    "data_sha256": "6a2d237ae03ed219f76c2d4cf827eeb6b9c852c88c54a5a77d6ca34706d84f86",
+    "trainer_sha256": "f31aece79c2322772139f2f299aa88dc272ec7d02ef3308bcaeeeb48e8cd4197",
+    "io_sha256": "6e0effced2c2a35bd474fba9925404bf84182d8c39348e365052bc7d0d9cb183",
+    "environment": {
+      "python": "3.13.15",
+      "torch": "2.11.0+cu130",
+      "torchvision": "0.26.0+cu130",
+      "numpy": "2.1.3",
+      "cuda": "13.0",
+      "cudnn": 92700,
+      "device": "cuda",
+      "gpu": "Tesla T4"
+    },
+    "amp": true
+  },
+  "smoke_history_reported": [
+    {
+      "epoch": 1,
+      "lr": 0.001,
+      "train": {
+        "loss": 4.6861255492693115,
+        "accuracy": 0.006172839506172839,
+        "macro_accuracy": 0.006172839506172839,
+        "samples": 162
+      },
+      "validation_split": "val_select",
+      "validation": {
+        "loss": 4.394078231152193,
+        "accuracy": 0.012345679012345678,
+        "macro_accuracy": 0.012345679012345678,
+        "samples": 162
+      },
+      "seconds_compute": 2.201521247999949
+    }
+  ],
+  "overfit_summary_reported": {
+    "run_id": "overfit_s42_v1",
+    "saved_and_checked_message": "/content/drive/MyDrive/hanzi81/runs/overfit_s42_v1",
+    "evaluation_split_from_workflow": "train-subset",
+    "first": {
+      "loss": 4.3893788655598955,
+      "accuracy": 0.012345679012345678,
+      "macro_accuracy": 0.012345679012345678,
+      "samples": 162
+    },
+    "last": {
+      "loss": 0.062451147830780644,
+      "accuracy": 1.0,
+      "macro_accuracy": 1.0,
+      "samples": 162
+    },
+    "full_history_received": false,
+    "planned_epochs_from_notebook": 20
+  },
+  "baseline_history_excerpt": [
+    {
+      "epoch": 1,
+      "lr": 0.001,
+      "train": {
+        "loss": 0.7249813524109346,
+        "accuracy": 0.8173868312757202,
+        "macro_accuracy": 0.8173868312757203,
+        "samples": 15552
+      },
+      "validation_split": "val_select",
+      "validation": {
+        "loss": 0.028963854643727034,
+        "accuracy": 0.9920267489711934,
+        "macro_accuracy": 0.9920267489711933,
+        "samples": 7776
+      },
+      "seconds_compute": 33.62441359500008
+    },
+    {
+      "epoch": 2,
+      "lr": 0.0009984740801978985,
+      "train": {
+        "loss": 0.028124311471304286,
+        "accuracy": 0.9949845679012346,
+        "macro_accuracy": 0.9949845679012346,
+        "samples": 15552
+      },
+      "validation_split": "val_select",
+      "validation": {
+        "loss": 0.0013353891293192473,
+        "accuracy": 1.0,
+        "macro_accuracy": 1.0,
+        "samples": 7776
+      },
+      "seconds_compute": 30.796133411000028
+    }
+  ],
+  "val_select_reported": {
+    "loss": 2.870661232301234e-06,
+    "accuracy": 1.0,
+    "macro_accuracy": 1.0,
+    "samples": 7776,
+    "by_sigma": {
+      "0.0": {"samples": 2592, "accuracy": 1.0},
+      "0.5": {"samples": 2592, "accuracy": 1.0},
+      "1.0": {"samples": 2592, "accuracy": 1.0}
+    },
+    "split": "val_select",
+    "checkpoint_epoch": 38,
+    "checkpoint_sha256": "8d65412bf6065253ebce3ca5b0c542788b71e0da391cc335a815f980d828a106"
+  },
+  "val_graph_reported": {
+    "loss": 2.9042040256890797e-06,
+    "accuracy": 1.0,
+    "macro_accuracy": 1.0,
+    "samples": 7776,
+    "by_sigma": {
+      "0.0": {"samples": 2592, "accuracy": 1.0},
+      "0.5": {"samples": 2592, "accuracy": 1.0},
+      "1.0": {"samples": 2592, "accuracy": 1.0}
+    },
+    "split": "val_graph",
+    "checkpoint_epoch": 38,
+    "checkpoint_sha256": "8d65412bf6065253ebce3ca5b0c542788b71e0da391cc335a815f980d828a106"
+  },
+  "graph_support_reported": {
+    "total_errors": 0,
+    "minimum_directed_error_count": 5,
+    "source_classes_meeting_threshold": 0
+  },
+  "missing_measurements": {
+    "total_training_wall_seconds": null,
+    "per_epoch_wall_seconds_including_saves": null,
+    "peak_gpu_memory_gib": null,
+    "compute_units_consumed": null,
+    "final_test_metrics": null
+  },
+  "current_decision": "Record this 81-character experiment first; no new character-set expansion or training is started."
+}
