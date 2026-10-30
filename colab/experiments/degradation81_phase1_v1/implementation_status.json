@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "phase": "degradation_calibration_phase1",
+  "status": "local_delivery_complete_cloud_inference_pending",
+  "generated_samples": 32400,
+  "grid_conditions": 25,
+  "pair_preview_sheets": 54,
+  "validation": {
+    "command": "python -m unittest training.test_degradation -v",
+    "tests": 6,
+    "passed": 6,
+    "seconds": 11.49,
+    "git_diff_check": "passed",
+    "inference_fixture": "real ResNet, 3 synthetic classes, 150 predictions across 25 grids; not research results"
+  },
+  "local_environment": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "Pillow": "12.3.0",
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu"
+  },
+  "frozen_model_evaluation": {
+    "status": "pending_colab_execution",
+    "checkpoint_location_confirmed_by_user": "Google Drive only",
+    "checkpoint_path": "MyDrive/hanzi81/runs/baseline81_s42_v1/best.pt",
+    "measured_accuracy": null
+  },
+  "human_readability": "not_measured",
+  "new_training": "not_run",
+  "original_test_evaluated": false,
+  "colab_notebook": "colab/hanzi81_degradation_phase1.ipynb",
+  "desktop_automation": "unavailable: node_repl sandboxCwd was rejected as a non-local file URI before initialization"
+}

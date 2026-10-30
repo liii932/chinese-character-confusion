@@ -1,5 +1,59 @@
 # 81 字基线的 Colab 准备与运行
 
+## R16同分布基线（已准备）
+
+复用第二轮训练核心，另存 [hanzi1140_r16_e10.ipynb](hanzi1140_r16_e10.ipynb)，使用独立的 `hanzi1140_r16_data.zip` 和 `MyDrive/hanzi1140_r16/`。
+模型为随机初始化的1,140类ResNet18，sigma=0，中间分辨率16，完整基线10轮；只保留准备、训练、报告三个单元。
+可读性以用户人工确认为依据，停止追加盲认与评分。R16数据包已生成（约1.43 GB）。将其上传到Drive的 `MyDrive/hanzi1140_r16/`，在Colab上传新Notebook并顺序运行三个代码单元即可。旧满分基线文件保留。
+
+## 第二轮完整 1,140 字数据（2026-10-29）
+
+全部 443 个来源字组涉及的 1,140 字已生成 656,640 张图，并通过独立像素审计。
+新入口为 [`hanzi1140_round2_e10.ipynb`](hanzi1140_round2_e10.ipynb)：沿用首轮 ResNet18，完整基线训练 10 个 epoch。
+这里将用户“训练10层”按训练 10 轮理解，网络层数继续沿用首轮。
+
+1. 在 Drive 的“我的云端硬盘”新建 `hanzi1140_round2`，上传原数据包 `colab/dist/hanzi1140_round2_data.zip`。
+2. 把新 Notebook 上传到 Colab、保存 Drive 副本，选择 Python 3 与 GPU。
+3. 顺序运行六个代码单元。第④格做独立小集 1 轮短跑；第⑤格默认完成完整基线 10 轮。
+4. 断线后重跑准备格和同一训练格，从最近完整 epoch 恢复。默认一次跑完；设 `EPOCHS_THIS_SESSION=2` 可分段运行，总预算仍为 10。
+
+源码已内嵌，沿用首轮交叉熵、AdamW、batch64、lr=0.001、weight_decay=0.0001、seed42 和 AMP。
+Drive 输出为 `hanzi1140_round2/runs/baseline1140_e10_s42_v1/`，包括 best/last.pt、配置与每轮日志、曲线、两个开发集的混淆矩阵及预测。
+第⑥格在完整 10 轮后自动评估 val_select 与 val_graph，test 保留。
+本机字组浏览入口为 `training/data/round2-1140-v1/preview/index.html`；详细协议与验收见
+[第二轮记录](experiments/round2_1140_v1/README.md)。2026-10-29 用户回传已完成 10 轮训练，两个开发集各 109,440 张均为 100% 准确率；
+详见[回传结果](experiments/round2_1140_v1/reported_results_2026-10-29.json)。尚未独立读取 Drive 权重或完整 history，test 未评价。
+
+## 退化标定第一阶段（2026-10-20）
+
+当前新阶段入口为 [`hanzi81_degradation_phase1.ipynb`](hanzi81_degradation_phase1.ipynb)。
+上传该 Notebook 到 Colab，顺序运行两个代码单元：准备固定标定集 → 对原第 38 轮 `best.pt` 做 25 档推理并保存报告。
+源代码已嵌入，沿用原 Drive 的数据包与模型，不必上传新 ZIP 或运行旧 Notebook。
+标定集为 81 字 × 16 个原 `val_graph` 清晰位移 × 25 档 = 32,400 张；本地数据及 54 对预览已生成。
+2026-10-27 已在本机 CPU 完成原模型及 PaddleOCR 的 25 档扫描，指标与逐图预测已归档；该 Notebook 保留为 Colab 复现入口。
+完整协议、结果状态和本地验证见[第一阶段记录](experiments/degradation81_phase1_v1/README.md)。
+
+## 已完成基线后的会话恢复版（2026-10-13）
+
+已有 `baseline81_s42_v1` 和学习曲线准备文件时，上传
+[`hanzi81_baseline_new.ipynb`](hanzi81_baseline_new.ipynb)。它根据用户从 Colab 导出的运行状态整理，
+包含三个可直接使用的代码单元；源码已嵌入，不需要另外上传 `session_cells`。
+
+1. **初始化与恢复**：挂载 Drive，复用或恢复固定包，校验文件，从已冻结实验目录恢复学习曲线脚本，并检查原 GPU 环境。不会自动训练。
+2. **分段续训**：默认 `RUN_TRAINING=False`；开启后一次选择一个档位，默认追加 3 块。每档总预算仍为 10 块 / 2430 批次，原脚本负责严格续训。
+3. **检查与汇总**：可在新 CPU 会话独立运行，从 Drive 读取日志、指标和计时报告。部分进度不算最终结果，四档完整后才生成固定预算比较图。新报告保存到 `analyses/baseline81_s42_v1/session_reports/`。
+
+第 6 项已接入第③格：复用原三轮计时报告，校验后计算吞吐、阶段耗时占比、显存容量占比、检查点空间及预算估算。
+成功时保存 `efficiency_resources.json` 和 `efficiency_resources.png`，状态为 `complete_saved_measurement_analysis`；
+报告缺失或不一致时仍为未完成。仅读取及分析已有测量，无需 GPU，不重跑短跑/拟合/基线，不自动执行模型评估。
+完整原始代码和运行输出保存在
+[`hanzi81_baseline_new.before_session_refactor.ipynb`](hanzi81_baseline_new.before_session_refactor.ipynb)，供追溯，不应全部执行。
+续训前选择与原实验匹配的 GPU；仅读报告可直接运行第③格，无需准备本地训练数据。
+
+维护入口为 `session_cells/*.py` 和 `make_session_notebook.py`；离线验证命令是
+`python -m unittest colab.test_efficiency colab.test_session_notebook -v`。此生成器不重建原始数据 ZIP。
+以下章节仍是首次建立基线的旧 Notebook 操作说明。
+
 2026-10-12：用户已选择 Colab，已有 Pro／算力额度，并确认先训练 81 字基线。
 完整 1,140 字候选池继续保留。本轮先建立可恢复的普通交叉熵基线，不实施针对性损失和四组正式对照。
 
@@ -115,3 +169,5 @@ python -m colab.build_bundle
 
 生成器拒绝混用不同环境或代码的旧输出，改变渲染环境时要用新输出目录，再重新审核图像、哈希和划分。
 训练保存方式参考 [PyTorch 官方检查点说明](https://docs.pytorch.org/tutorials/beginner/saving_loading_models.html)。
+
+扫描 PDF 场景下的 PaddleOCR、人工字框复核与 Edge 对照实验，见 [第一阶段方案和操作步骤](experiments/ocr_edge_pilot_v1/README.md)。

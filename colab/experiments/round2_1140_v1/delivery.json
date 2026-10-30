@@ -1,0 +1,9 @@
+{
+  "archive": "colab/dist/hanzi1140_round2_data.zip",
+  "bytes": 767797070,
+  "sha256": "de4a86f05d4d41420366dc3cf7de48271c9482167f9243727ee276d6a907494e",
+  "files": 2303,
+  "dataset": "training/data/round2-1140-v1",
+  "status": "data_ready_training_not_started",
+  "archive_entries_verified": true
+}

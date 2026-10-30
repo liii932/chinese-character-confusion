@@ -1,0 +1,25 @@
+{
+  "images": 32400,
+  "unique_pixels": 32400,
+  "same_label_duplicate_images": 0,
+  "cross_label_collisions": [],
+  "blank_images": 0,
+  "maximum_border_darkness": 6,
+  "images_with_border_darkness_ge_16": 0,
+  "note": "Pixel uniqueness is a data audit, not a readability or difficulty measurement.",
+  "clean_identity": true,
+  "source_split": "val_graph",
+  "test_arrays_opened": false,
+  "position_statistics": {
+    "dx": {
+      "mean": -0.03125,
+      "min": -3.0,
+      "max": 2.75
+    },
+    "dy": {
+      "mean": -0.078125,
+      "min": -3.0,
+      "max": 3.0
+    }
+  }
+}

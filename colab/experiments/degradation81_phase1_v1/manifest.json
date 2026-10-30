@@ -1,0 +1,282 @@
+{
+  "schema": 1,
+  "purpose": "development_calibration_only",
+  "dataset": "degradation81-calibration-v1",
+  "source_split": "val_graph",
+  "source_manifest_sha256": "6a2d237ae03ed219f76c2d4cf827eeb6b9c852c88c54a5a77d6ca34706d84f86",
+  "selection_seed": 20261020,
+  "source_condition_ids": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    9,
+    10,
+    14,
+    16,
+    18,
+    19,
+    23,
+    25,
+    26,
+    29,
+    30
+  ],
+  "conditions": [
+    {
+      "source_condition_id": 1,
+      "dx": -2.0,
+      "dy": 2.0,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 2,
+      "dx": 0.5,
+      "dy": -2.0,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 4,
+      "dx": 0.0,
+      "dy": -2.5,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 5,
+      "dx": -3.0,
+      "dy": -1.5,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 6,
+      "dx": 0.5,
+      "dy": 2.0,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 9,
+      "dx": 2.75,
+      "dy": 2.75,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 10,
+      "dx": 1.75,
+      "dy": 2.75,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 14,
+      "dx": 2.5,
+      "dy": -3.0,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 16,
+      "dx": -2.0,
+      "dy": 0.5,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 18,
+      "dx": 0.25,
+      "dy": -0.5,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 19,
+      "dx": 0.0,
+      "dy": 0.0,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 23,
+      "dx": 2.75,
+      "dy": 3.0,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 25,
+      "dx": -2.5,
+      "dy": -1.75,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 26,
+      "dx": -1.0,
+      "dy": -3.0,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 29,
+      "dx": 1.25,
+      "dy": 2.25,
+      "sigma": 0
+    },
+    {
+      "source_condition_id": 30,
+      "dx": -2.25,
+      "dy": -2.25,
+      "sigma": 0
+    }
+  ],
+  "source_group_key": "baseline81-v2/val_graph/source_index; all 25 derivatives stay together",
+  "grids": [
+    {
+      "grid_id": 0,
+      "sigma": 0,
+      "resolution": 64
+    },
+    {
+      "grid_id": 1,
+      "sigma": 0,
+      "resolution": 48
+    },
+    {
+      "grid_id": 2,
+      "sigma": 0,
+      "resolution": 32
+    },
+    {
+      "grid_id": 3,
+      "sigma": 0,
+      "resolution": 24
+    },
+    {
+      "grid_id": 4,
+      "sigma": 0,
+      "resolution": 16
+    },
+    {
+      "grid_id": 5,
+      "sigma": 1,
+      "resolution": 64
+    },
+    {
+      "grid_id": 6,
+      "sigma": 1,
+      "resolution": 48
+    },
+    {
+      "grid_id": 7,
+      "sigma": 1,
+      "resolution": 32
+    },
+    {
+      "grid_id": 8,
+      "sigma": 1,
+      "resolution": 24
+    },
+    {
+      "grid_id": 9,
+      "sigma": 1,
+      "resolution": 16
+    },
+    {
+      "grid_id": 10,
+      "sigma": 1.5,
+      "resolution": 64
+    },
+    {
+      "grid_id": 11,
+      "sigma": 1.5,
+      "resolution": 48
+    },
+    {
+      "grid_id": 12,
+      "sigma": 1.5,
+      "resolution": 32
+    },
+    {
+      "grid_id": 13,
+      "sigma": 1.5,
+      "resolution": 24
+    },
+    {
+      "grid_id": 14,
+      "sigma": 1.5,
+      "resolution": 16
+    },
+    {
+      "grid_id": 15,
+      "sigma": 2,
+      "resolution": 64
+    },
+    {
+      "grid_id": 16,
+      "sigma": 2,
+      "resolution": 48
+    },
+    {
+      "grid_id": 17,
+      "sigma": 2,
+      "resolution": 32
+    },
+    {
+      "grid_id": 18,
+      "sigma": 2,
+      "resolution": 24
+    },
+    {
+      "grid_id": 19,
+      "sigma": 2,
+      "resolution": 16
+    },
+    {
+      "grid_id": 20,
+      "sigma": 2.5,
+      "resolution": 64
+    },
+    {
+      "grid_id": 21,
+      "sigma": 2.5,
+      "resolution": 48
+    },
+    {
+      "grid_id": 22,
+      "sigma": 2.5,
+      "resolution": 32
+    },
+    {
+      "grid_id": 23,
+      "sigma": 2.5,
+      "resolution": 24
+    },
+    {
+      "grid_id": 24,
+      "sigma": 2.5,
+      "resolution": 16
+    }
+  ],
+  "shape": [
+    25,
+    1296,
+    64,
+    64
+  ],
+  "samples": 32400,
+  "characters": 81,
+  "pairs": 54,
+  "samples_per_character_per_grid": 16,
+  "normalization": "uint8 / 127.5 - 1",
+  "pipeline": [
+    "archived clear 64x64",
+    "white-pad16 Gaussian(sigma in 64px units)",
+    "Lanczos to R",
+    "bicubic to 64; bypass both resizes when R=64"
+  ],
+  "runtime": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "Pillow": "12.3.0"
+  },
+  "files": {
+    "sweep.npz": "085213b7188be780c02a785b373c0c89fed2cc29cea6f879d3a8fa41b979c6ac",
+    "labels.json": "a42f944bcd85f43c05da13599efd18c8a64a9b58c90a7828d504405eef79c992"
+  },
+  "pixel_sha256": "aafb1d4225faa7abe691fca4e9415bfc302e22c2e5beb230a723d528638426bc",
+  "model_evaluation": "pending_original_checkpoint",
+  "human_readability": "not_measured",
+  "interpretation": "Related synthetic variants, not independent real glyphs. No training or final test."
+}

@@ -1,0 +1,7 @@
+{
+  "archive": "colab/dist/hanzi1140_r16_data.zip",
+  "bytes": 1427218535,
+  "sha256": "5d099af838d3bf7400fc3f130ef889b6fee0baf63fdde7324026538e73c9270d",
+  "files": 9,
+  "status": "R16 data ready; GPU training not started"
+}
