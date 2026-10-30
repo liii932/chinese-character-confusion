@@ -1,0 +1,10 @@
+{
+  "notebook": "colab/hanzi1140_r16_e10.ipynb",
+  "sha256": "969ef39bf4f819a4c5e4b1621ea74f179e295468022c45062ab7576ec7710304",
+  "resolution": 16,
+  "sigma": 0,
+  "epochs": 10,
+  "training_core": "unchanged embedded original training.train",
+  "data_archive_sha256": "5d099af838d3bf7400fc3f130ef889b6fee0baf63fdde7324026538e73c9270d",
+  "status": "prepared; no GPU training executed"
+}

@@ -1,0 +1,8 @@
+{
+  "decoded_pngs_checked": 5700,
+  "public_forms_checked": 5,
+  "public_payload_contains_labels_or_resolution": false,
+  "javascript_syntax_checks": 5,
+  "synthetic_scoring_checks": "passed; unknown and missing counted in denominator",
+  "human_results": "not collected"
+}

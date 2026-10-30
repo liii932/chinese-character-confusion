@@ -1,0 +1,16 @@
+{
+  "basis": "User explicitly confirmed all displayed resolutions recognizable and requested stopping further readability tests",
+  "confirmed_resolutions": [
+    64,
+    48,
+    32,
+    24,
+    16
+  ],
+  "selected_resolution": 16,
+  "sigma": 0,
+  "human_accuracy": "not quantified",
+  "partial_response_file": "not scored at user request",
+  "implementation": "Reuse existing training core, separate notebook and data/run paths",
+  "baseline_epochs": 10
+}

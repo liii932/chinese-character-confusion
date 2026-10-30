@@ -1,0 +1,16 @@
+{
+  "notebook": "colab/hanzi1140_round2_e10.ipynb",
+  "sha256": "c4d2f9fe526d278676c3decccb11e7aca0b58512bf1d98b0116bf1ef4bbe9328",
+  "classes": 1140,
+  "baseline_epochs": 10,
+  "separate_smoke_epochs": 1,
+  "data_archive_sha256": "de4a86f05d4d41420366dc3cf7de48271c9482167f9243727ee276d6a907494e",
+  "data_manifest_sha256": "6fde9718cdd5b4985d03b5a81f887f15c934ddda400775f93ba8c6f868dcdaef",
+  "training_source_id": "c474f7fe3abeb83ece73dc77ce84e7c347996c5892e8c0007ca1f8e738ae8125",
+  "embedded_source_sha256": {
+    "training/__init__.py": "35a2caf1f6f1da8c3093a2f658be862bf4f363be00e880e09680e8b389009b68",
+    "training/io_utils.py": "6e0effced2c2a35bd474fba9925404bf84182d8c39348e365052bc7d0d9cb183",
+    "training/train.py": "f31aece79c2322772139f2f299aa88dc272ec7d02ef3308bcaeeeb48e8cd4197"
+  },
+  "status": "notebook_prepared_no_colab_training_run"
+}

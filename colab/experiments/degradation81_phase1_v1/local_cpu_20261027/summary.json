@@ -1,0 +1,38 @@
+{
+  "status": "completed_frozen_model_sweep",
+  "samples": 32400,
+  "grids": 25,
+  "checkpoint_epoch": 38,
+  "checkpoint_sha256": "8d65412bf6065253ebce3ca5b0c542788b71e0da391cc335a815f980d828a106",
+  "calibration_manifest_sha256": "8ab44b72e736824e20b57be3e0763b3143133fbdeae76385943acf717501b46f",
+  "pixel_sha256": "aafb1d4225faa7abe691fca4e9415bfc302e22c2e5beb230a723d528638426bc",
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu",
+    "numpy": "2.5.2",
+    "cuda": null,
+    "cudnn": null,
+    "device": "cpu",
+    "gpu": null
+  },
+  "original_training_environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "numpy": "2.1.3",
+    "cuda": "13.0",
+    "cudnn": 92700,
+    "device": "cuda",
+    "gpu": "Tesla T4"
+  },
+  "precision": "fp32_no_autocast",
+  "clean_control_accuracy": 1.0,
+  "clean_control_matches_archived": true,
+  "evaluator_sha256": "44d39104c8fdcddc497cc24e3af6d782b8c3674f28180f0cfe3719551fb3e0cf",
+  "human_readability": "not_measured",
+  "retrained_baseline": "not_run",
+  "test_evaluated": false,
+  "interpretation": "New-corruption evaluation of the old model; not final-test or matched-training evidence.",
+  "report_recovered_from_saved_predictions": true
+}

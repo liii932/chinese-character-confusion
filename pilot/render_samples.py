@@ -52,8 +52,8 @@ def edge_darkness(image):
     return 255 - min(pixels)
 
 
-def checked_input():
-    raw = (ROOT / "characters.json").read_bytes()
+def checked_input(path=None):
+    raw = Path(path if path is not None else ROOT / "characters.json").read_bytes()
     data = json.loads(raw.decode("utf-8-sig"))
     chars, pairs = data["characters"], data["pairs"]
     labels = [row["char"] for row in chars]

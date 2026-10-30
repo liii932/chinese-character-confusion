@@ -1,0 +1,38 @@
+{
+  "seed": 20261029,
+  "source_split": "val_graph",
+  "source_manifest_sha256": "6fde9718cdd5b4985d03b5a81f887f15c934ddda400775f93ba8c6f868dcdaef",
+  "source_condition_id": 13,
+  "source_condition": {
+    "dx": -1.0,
+    "dy": 0.25,
+    "sigma": 0
+  },
+  "resolutions": [
+    64,
+    48,
+    32,
+    24,
+    16
+  ],
+  "sigma": 0,
+  "pipeline": "clear64 -> Lanczos R -> bicubic64; R64 identity",
+  "preview_images": 5700,
+  "unique_pixels": 5700,
+  "forms": 5,
+  "trials_per_form": 600,
+  "per_resolution_per_form": 120,
+  "unique_characters_per_form": 600,
+  "stratification_quotas": {
+    "笔画微差类（长短、出头、点撇微殊）": 103,
+    "复合构件与经典多字族": 193,
+    "偏旁混淆与字架近形类": 304
+  },
+  "design": "One form per participant. Five forms rotate same 600 characters across R. No feedback. No train/test arrays read.",
+  "human_accuracy": "not_measured",
+  "display": "128 CSS pixels, nearest-neighbor, browser100%, computer",
+  "runtime": {
+    "numpy": "2.5.2",
+    "Pillow": "12.3.0"
+  }
+}

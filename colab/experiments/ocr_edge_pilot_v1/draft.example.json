@@ -1,0 +1,13 @@
+{
+  "split": "dev",
+  "notes": "填写真实 PDF 页码、来源、Edge 版本、Windows 版本及标注信息。",
+  "pages": [
+    {
+      "id": "page_001",
+      "source_id": "document_001",
+      "edge_status": "ok",
+      "edge_text": "edge/page_001.txt",
+      "lines": ["annotations/page_001_line_001.json"]
+    }
+  ]
+}

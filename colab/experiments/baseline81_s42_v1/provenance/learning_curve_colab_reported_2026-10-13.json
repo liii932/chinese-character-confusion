@@ -1,0 +1,238 @@
+{
+  "suite": "/content/drive/MyDrive/hanzi81/analyses/baseline81_s42_v1/03_learning_curve/steps2430_s42_v1",
+  "purpose": "single_seed_81_class_sample_size_curve_fixed_batch_budget",
+  "all_complete": true,
+  "planned_batch_attempts_per_arm": 2430,
+  "comparison": "Primary: last block at fixed budget. Secondary: best val_select checkpoint.",
+  "single_seed_exploratory": true,
+  "results": [
+    {
+      "per_class": 24,
+      "unique_training_images": 1944,
+      "completed_blocks": 10,
+      "complete": true,
+      "last_completed_batch_attempts": 2430,
+      "optimizer_updates": 2430,
+      "amp_skipped_updates": 0,
+      "first_observed_99_9pct_at_batch": 486,
+      "first_observed_100pct_at_batch": 486,
+      "last_completed_validation": {
+        "loss": 0.00013333098968172852,
+        "accuracy": 1.0,
+        "macro_accuracy": 1.0,
+        "samples": 7776,
+        "errors": 0,
+        "worst_class_accuracy": 1.0,
+        "by_sigma": {
+          "0.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "0.5": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "1.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "best_block": 10,
+      "best_validation": {
+        "loss": 0.00013333098968172852,
+        "accuracy": 1.0,
+        "macro_accuracy": 1.0,
+        "samples": 7776,
+        "errors": 0,
+        "worst_class_accuracy": 1.0,
+        "by_sigma": {
+          "0.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "0.5": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "1.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "compute_minutes": 5.819220067500017
+    },
+    {
+      "per_class": 48,
+      "unique_training_images": 3888,
+      "completed_blocks": 10,
+      "complete": true,
+      "last_completed_batch_attempts": 2430,
+      "optimizer_updates": 2430,
+      "amp_skipped_updates": 0,
+      "first_observed_99_9pct_at_batch": 486,
+      "first_observed_100pct_at_batch": 486,
+      "last_completed_validation": {
+        "loss": 0.00010385150300054293,
+        "accuracy": 1.0,
+        "macro_accuracy": 1.0,
+        "samples": 7776,
+        "errors": 0,
+        "worst_class_accuracy": 1.0,
+        "by_sigma": {
+          "0.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "0.5": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "1.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "best_block": 10,
+      "best_validation": {
+        "loss": 0.00010385150300054293,
+        "accuracy": 1.0,
+        "macro_accuracy": 1.0,
+        "samples": 7776,
+        "errors": 0,
+        "worst_class_accuracy": 1.0,
+        "by_sigma": {
+          "0.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "0.5": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "1.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "compute_minutes": 5.855683655549997
+    },
+    {
+      "per_class": 96,
+      "unique_training_images": 7776,
+      "completed_blocks": 10,
+      "complete": true,
+      "last_completed_batch_attempts": 2430,
+      "optimizer_updates": 2430,
+      "amp_skipped_updates": 0,
+      "first_observed_99_9pct_at_batch": 243,
+      "first_observed_100pct_at_batch": 243,
+      "last_completed_validation": {
+        "loss": 0.00011255194139839323,
+        "accuracy": 1.0,
+        "macro_accuracy": 1.0,
+        "samples": 7776,
+        "errors": 0,
+        "worst_class_accuracy": 1.0,
+        "by_sigma": {
+          "0.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "0.5": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "1.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "best_block": 10,
+      "best_validation": {
+        "loss": 0.00011255194139839323,
+        "accuracy": 1.0,
+        "macro_accuracy": 1.0,
+        "samples": 7776,
+        "errors": 0,
+        "worst_class_accuracy": 1.0,
+        "by_sigma": {
+          "0.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "0.5": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "1.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "compute_minutes": 5.726808310600003
+    },
+    {
+      "per_class": 192,
+      "unique_training_images": 15552,
+      "completed_blocks": 10,
+      "complete": true,
+      "last_completed_batch_attempts": 2430,
+      "optimizer_updates": 2430,
+      "amp_skipped_updates": 0,
+      "first_observed_99_9pct_at_batch": 486,
+      "first_observed_100pct_at_batch": 486,
+      "last_completed_validation": {
+        "loss": 0.00011568298794994122,
+        "accuracy": 1.0,
+        "macro_accuracy": 1.0,
+        "samples": 7776,
+        "errors": 0,
+        "worst_class_accuracy": 1.0,
+        "by_sigma": {
+          "0.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "0.5": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "1.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "best_block": 10,
+      "best_validation": {
+        "loss": 0.00011568298794994122,
+        "accuracy": 1.0,
+        "macro_accuracy": 1.0,
+        "samples": 7776,
+        "errors": 0,
+        "worst_class_accuracy": 1.0,
+        "by_sigma": {
+          "0.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "0.5": {
+            "samples": 2592,
+            "accuracy": 1.0
+          },
+          "1.0": {
+            "samples": 2592,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "compute_minutes": 5.317652078783336
+    }
+  ]
+}

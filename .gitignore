@@ -2,9 +2,17 @@
 /*
 !/.gitignore
 !/.gitattributes
+!/AGENTS.md
+!/.agents/
+/.agents/*
+!/.agents/skills/
+/.agents/skills/*
+!/.agents/skills/lean-decisive-research/
 !/形近字识别项目设计书.md
 !/笔画微差类（长短、出头、点撇微殊）.md
 !/ppt设计.md
+!/PPT提纲_81字阶段汇报_2026-10-13.md
+!/技术报告提纲_81字形近字识别_2026-10-13.md
 !/pilot/
 !/training/
 !/colab/
@@ -19,6 +27,7 @@ __pycache__/
 /training/runs/
 /training/.verification/
 /colab/dist/
+/colab/*.pt
 
 # Independent pilot outputs; never commit generated training data or checkpoints.
 /pilot/dataset_81*/

@@ -1,0 +1,51 @@
+{
+  "provenance": "User pasted Colab output; checkpoint/history files not independently read",
+  "completed_epochs": 10,
+  "metrics": {
+    "val_select": {
+      "loss": 6.311949146028415e-07,
+      "accuracy": 1.0,
+      "macro_accuracy": 1.0,
+      "samples": 109440,
+      "by_sigma": {
+        "0.0": {
+          "samples": 36480,
+          "accuracy": 1.0
+        },
+        "0.5": {
+          "samples": 36480,
+          "accuracy": 1.0
+        },
+        "1.0": {
+          "samples": 36480,
+          "accuracy": 1.0
+        }
+      },
+      "checkpoint_epoch": 10,
+      "checkpoint_sha256": "01d4f218f49aaed33a534c0c809bf1cf70fbd78eca07324069e9de5c18742572"
+    },
+    "val_graph": {
+      "loss": 6.371956624655851e-07,
+      "accuracy": 1.0,
+      "macro_accuracy": 1.0,
+      "samples": 109440,
+      "by_sigma": {
+        "0.0": {
+          "samples": 36480,
+          "accuracy": 1.0
+        },
+        "0.5": {
+          "samples": 36480,
+          "accuracy": 1.0
+        },
+        "1.0": {
+          "samples": 36480,
+          "accuracy": 1.0
+        }
+      },
+      "checkpoint_epoch": 10,
+      "checkpoint_sha256": "01d4f218f49aaed33a534c0c809bf1cf70fbd78eca07324069e9de5c18742572"
+    }
+  },
+  "interpretation": "Both development sets have zero errors; no supported confusion edges; test not reported"
+}

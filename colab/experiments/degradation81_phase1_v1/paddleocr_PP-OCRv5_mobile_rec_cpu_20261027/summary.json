@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "model": "PP-OCRv5_mobile_rec",
+  "model_dir": "C:\\Users\\heshi\\.paddlex\\official_models\\PP-OCRv5_mobile_rec",
+  "model_sha256": {
+    "inference.json": "24587345250c7332d0fc6f9a44e794d078cdaeb64c302fef906f325619de2569",
+    "inference.pdiparams": "2460da90875937c94db97eba74ae3d9e5d4c4c57c42f1f41531c09a26bcc771a",
+    "inference.yml": "5dfeb2777f6d0db8177d8128a8acfcf6e6276dc4ac73ea3bf0dc06d6a5e85d8e"
+  },
+  "python": "3.13.15",
+  "paddle": "3.2.2",
+  "paddleocr": "3.7.0",
+  "device": "cpu",
+  "cpu_threads": 4,
+  "enable_mkldnn": true,
+  "batch_size": 32,
+  "dataset_manifest_sha256": "8ab44b72e736824e20b57be3e0763b3143133fbdeae76385943acf717501b46f",
+  "dataset_pixel_sha256": "aafb1d4225faa7abe691fca4e9415bfc302e22c2e5beb230a723d528638426bc",
+  "samples": 32400,
+  "grids": 25,
+  "elapsed_seconds_this_run": 991.8930959999561,
+  "metric": "exact raw recognized string equals ground-truth single character",
+  "data_scope": "development calibration derived from val_graph, not the held-out test split",
+  "input": "unchanged 64x64 grayscale pixels repeated into 3 channels; model default preprocessing",
+  "training_scope": "general pretrained recognizer versus custom 81-class baseline; not matched training"
+}

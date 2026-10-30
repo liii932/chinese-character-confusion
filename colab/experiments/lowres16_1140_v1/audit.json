@@ -1,0 +1,30 @@
+{
+  "automatic_checks_passed": true,
+  "classes": 1140,
+  "unique_images": 656640,
+  "splits": {
+    "train": {
+      "images": 218880,
+      "per_class": 192
+    },
+    "val_graph": {
+      "images": 109440,
+      "per_class": 96
+    },
+    "val_select": {
+      "images": 109440,
+      "per_class": 96
+    },
+    "test": {
+      "images": 218880,
+      "per_class": 192
+    }
+  },
+  "resolution": 16,
+  "sigma": 0,
+  "cross_split_duplicates": 0,
+  "blank_images": 0,
+  "max_edge_darkness": 6,
+  "method": "Generation-time shared-condition pixel deduplication, clipping, blank, boundary and label construction checks; no additional readability test",
+  "readability_basis": "User explicitly confirmed all displayed resolution levels recognizable; blind testing stopped"
+}

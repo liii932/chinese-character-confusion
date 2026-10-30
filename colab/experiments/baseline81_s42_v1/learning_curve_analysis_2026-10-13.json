@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "recorded_date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "status": "complete_user_reported_summary_checked",
+  "scope": "81-class single-seed sample-size curve; final fixed-budget val_select comparison",
+  "source": {
+    "kind": "user_pasted_colab_summary",
+    "attachment_id": "0832fffb-a07a-4420-a27f-436eb0be1b60",
+    "archive_relative_path": "provenance/learning_curve_colab_reported_2026-10-13.json",
+    "attachment_and_archive_sha256": "53eeec5398f76ffe2f4bfff634b63e7e8d880ccac079f4f157f6349b97dee0b3",
+    "reported_drive_suite": "/content/drive/MyDrive/hanzi81/analyses/baseline81_s42_v1/03_learning_curve/steps2430_s42_v1",
+    "assistant_accessed_drive": false,
+    "original_drive_summary_hash_available": false,
+    "per_arm_histories_and_checkpoints_downloaded": false,
+    "frozen_local_sources_checked": {
+      "colab/learning_curve.py": "2b098c465e94fd1909c159c1a64b59745e914c13023e1a23d8a3445e2231272d",
+      "training/train.py": "f31aece79c2322772139f2f299aa88dc272ec7d02ef3308bcaeeeb48e8cd4197"
+    }
+  },
+  "checks": {
+    "all_four_arms_complete": true,
+    "each_arm_10_blocks_2430_attempts_2430_updates": true,
+    "no_amp_skipped_updates": true,
+    "unique_image_counts_match_81_classes": true,
+    "validation_counts_overall_and_by_sigma_consistent": true,
+    "last_and_best_validation_equal_at_block_10": true,
+    "all_final_overall_macro_worst_class_and_sigma_accuracies_100pct": true
+  },
+  "primary_comparison": [
+    {
+      "per_class": 24,
+      "unique_training_images": 1944,
+      "training_draws": 155520,
+      "effective_subset_passes": 80,
+      "last_block": 10,
+      "optimizer_updates": 2430,
+      "amp_skipped_updates": 0,
+      "val_select_accuracy": 1.0,
+      "val_select_macro_accuracy": 1.0,
+      "val_select_loss": 0.00013333098968172852,
+      "errors": 0,
+      "first_observed_100pct_block": 2,
+      "compute_minutes_excluding_checkpoint_saves": 5.819220067500017
+    },
+    {
+      "per_class": 48,
+      "unique_training_images": 3888,
+      "training_draws": 155520,
+      "effective_subset_passes": 40,
+      "last_block": 10,
+      "optimizer_updates": 2430,
+      "amp_skipped_updates": 0,
+      "val_select_accuracy": 1.0,
+      "val_select_macro_accuracy": 1.0,
+      "val_select_loss": 0.00010385150300054293,
+      "errors": 0,
+      "first_observed_100pct_block": 2,
+      "compute_minutes_excluding_checkpoint_saves": 5.855683655549997
+    },
+    {
+      "per_class": 96,
+      "unique_training_images": 7776,
+      "training_draws": 155520,
+      "effective_subset_passes": 20,
+      "last_block": 10,
+      "optimizer_updates": 2430,
+      "amp_skipped_updates": 0,
+      "val_select_accuracy": 1.0,
+      "val_select_macro_accuracy": 1.0,
+      "val_select_loss": 0.00011255194139839323,
+      "errors": 0,
+      "first_observed_100pct_block": 1,
+      "compute_minutes_excluding_checkpoint_saves": 5.726808310600003
+    },
+    {
+      "per_class": 192,
+      "unique_training_images": 15552,
+      "training_draws": 155520,
+      "effective_subset_passes": 10,
+      "last_block": 10,
+      "optimizer_updates": 2430,
+      "amp_skipped_updates": 0,
+      "val_select_accuracy": 1.0,
+      "val_select_macro_accuracy": 1.0,
+      "val_select_loss": 0.00011568298794994122,
+      "errors": 0,
+      "first_observed_100pct_block": 2,
+      "compute_minutes_excluding_checkpoint_saves": 5.317652078783336
+    }
+  ],
+  "total_compute_minutes_excluding_checkpoint_saves": 22.719364112433354,
+  "interpretation": [
+    "四档在固定预算结束时的 val_select 准确率均为 100%，当前准确率指标已饱和。",
+    "24 张每字是本次测试中达到满分的最小档，不是已经确定的最小充分样本量。",
+    "24 张档的不重复图片数是 192 张档的八分之一，但每档训练呈现量及实际更新数相同，不代表节省八倍算力。",
+    "48 张档的最终交叉熵最低；损失未随样本量单调改善，单次结果不构成最佳档位或显著性结论。",
+    "96 张档在第 1 块评估首次观察到满分，其余档在第 2 块；只表示离散评估点，不确定准确的达标更新时刻。"
+  ],
+  "limitations": [
+    "单个训练种子及一套嵌套子集，未测跨种子或抽样波动。",
+    "固定字体的相关合成变体；不是跨字体、真实 OCR 或 1140 类泛化证据。",
+    "val_select 是重复使用的开发集；本次没有最终 test 指标。",
+    "仅收到汇总及此前 192 张档前三块日志；不能重建四档逐块曲线或核实首次达标后是否持续满分。",
+    "compute_minutes 汇总训练及验证计算，不含检查点保存、初始化和会话空闲；不是 Colab 计费时长或算力单位。",
+    "未直接读取 Drive 中的 plan、子集、history 或检查点，内部一致性核对不代替文件来源验证。"
+  ],
+  "next_stage_authorized": false,
+  "development_items_status": {
+    "1": "complete_report_received",
+    "2": "complete_report_received",
+    "3": "complete_report_received",
+    "6": "complete_saved_measurement_analysis_report_received"
+  }
+}

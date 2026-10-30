@@ -1,0 +1,51 @@
+{
+  "automatic_checks_passed": true,
+  "classes": 1140,
+  "source_groups": 443,
+  "unique_images": 656640,
+  "splits": {
+    "train": {
+      "images": 218880,
+      "per_class": 192,
+      "per_class_per_sigma": {
+        "0": 64,
+        "0.5": 64,
+        "1.0": 64
+      }
+    },
+    "val_graph": {
+      "images": 109440,
+      "per_class": 96,
+      "per_class_per_sigma": {
+        "0": 32,
+        "0.5": 32,
+        "1.0": 32
+      }
+    },
+    "val_select": {
+      "images": 109440,
+      "per_class": 96,
+      "per_class_per_sigma": {
+        "0": 32,
+        "0.5": 32,
+        "1.0": 32
+      }
+    },
+    "test": {
+      "images": 218880,
+      "per_class": 192,
+      "per_class_per_sigma": {
+        "0": 64,
+        "0.5": 64,
+        "1.0": 64
+      }
+    }
+  },
+  "blank_images": 0,
+  "nonwhite_boundaries": 0,
+  "pixel_duplicates": 0,
+  "cross_split_condition_duplicates": 0,
+  "file_hashes_verified": true,
+  "saved_label_condition_alignment_verified": true,
+  "interpretation": "Pixel and provenance audit only; no model predictions or human readability measurement"
+}

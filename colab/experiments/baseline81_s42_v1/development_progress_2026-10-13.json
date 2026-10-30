@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "record_date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "run_id": "baseline81_s42_v1",
+  "evidence": {
+    "origin": "User-pasted outputs and curve image in this conversation; no direct access to Colab or Drive",
+    "drive_files_downloaded": false,
+    "baseline_full_history_file_received": false,
+    "baseline_full_history_analysis_summary_received": true,
+    "baseline_history_curve_image_received": true,
+    "learning_curve_preparation_output_received": true,
+    "learning_curve_training_history_received": false,
+    "learning_curve_training_summary_received": false,
+    "test_evaluated": false
+  },
+  "current_user_instruction": "是额度到达上限了。请保留6未完成，将1 3结果记录",
+  "task_status": {
+    "1": {"name": "完整基线日志分析", "status": "completed_and_recorded"},
+    "2": {"name": "分类间隔与字对分析", "status": "prior_results_retained_unchanged"},
+    "3": {"name": "样本量学习曲线", "status": "preparation_confirmed_training_results_not_received"},
+    "6": {"name": "算力与保存耗时测量", "status": "incomplete_per_user_request", "prior_measurements_retained": true}
+  },
+  "history_analysis_reported": {
+    "run": "baseline81_s42_v1",
+    "完成轮数": 40,
+    "history_sha256": "0f54b1e21979f3414be08e16908e6d2e767c40aec17a8179ecbb854b692a712c",
+    "阈值统计_val_select_macro_accuracy": {
+      "99%": {"首次达到的epoch": 1, "持续保持到第40轮的起始epoch": 1},
+      "99.9%": {"首次达到的epoch": 2, "持续保持到第40轮的起始epoch": 2},
+      "100%": {"首次达到的epoch": 2, "持续保持到第40轮的起始epoch": 2}
+    },
+    "按原规则选出的最佳epoch": 38,
+    "最佳轮验证指标": {
+      "loss": 2.870661232301234e-06,
+      "accuracy": 1.0,
+      "macro_accuracy": 1.0,
+      "samples": 7776
+    },
+    "第40轮验证指标": {
+      "loss": 2.961677515718424e-06,
+      "accuracy": 1.0,
+      "macro_accuracy": 1.0,
+      "samples": 7776
+    },
+    "计算耗时_含训练验证_不含检查点保存": {
+      "40轮合计分钟": 20.863,
+      "首轮秒": 33.624,
+      "第2至40轮中位数秒": 31.133,
+      "第2至40轮最短秒": 30.796,
+      "第2至40轮最长秒": 34.759
+    },
+    "关键轮次": [
+      {"epoch": 1, "lr": 0.001, "train_loss": 0.7249813524109346, "train_accuracy": 0.8173868312757202, "val_loss": 0.028963854643727034, "val_accuracy": 0.9920267489711934},
+      {"epoch": 2, "lr": 0.0009984740801978985, "train_loss": 0.028124311471304286, "train_accuracy": 0.9949845679012346, "val_loss": 0.0013353891293192473, "val_accuracy": 1.0},
+      {"epoch": 5, "lr": 0.0009757729755661011, "train_loss": 0.0004235328761515794, "train_accuracy": 1.0, "val_loss": 0.00018167790424781987, "val_accuracy": 1.0},
+      {"epoch": 10, "lr": 0.0008814009529720154, "train_loss": 0.00011139744777738312, "train_accuracy": 1.0, "val_loss": 4.703017607294866e-05, "val_accuracy": 1.0},
+      {"epoch": 20, "lr": 0.0005438372523852832, "train_loss": 2.518647308212249e-05, "train_accuracy": 1.0, "val_loss": 9.746961134515603e-06, "val_accuracy": 1.0},
+      {"epoch": 30, "lr": 0.00018352321607655907, "train_loss": 1.0876897185918236e-05, "train_accuracy": 1.0, "val_loss": 4.077282466352227e-06, "val_accuracy": 1.0},
+      {"epoch": 38, "lr": 2.3676889403150102e-05, "train_loss": 8.212003872227766e-06, "train_accuracy": 1.0, "val_loss": 2.870661232301234e-06, "val_accuracy": 1.0},
+      {"epoch": 40, "lr": 1.1525919802101659e-05, "train_loss": 7.76686234238707e-06, "train_accuracy": 1.0, "val_loss": 2.961677515718424e-06, "val_accuracy": 1.0}
+    ]
+  },
+  "history_analysis_drive_path_reported": "/content/drive/MyDrive/hanzi81/analyses/baseline81_s42_v1/01_history",
+  "learning_curve_preparation_reported": {
+    "prepared": true,
+    "batch_attempts_per_arm": 2430,
+    "arms": [
+      {"per_class": 24, "unique_images": 1944, "per_sigma_per_class": 8, "effective_subset_passes": 80},
+      {"per_class": 48, "unique_images": 3888, "per_sigma_per_class": 16, "effective_subset_passes": 40},
+      {"per_class": 96, "unique_images": 7776, "per_sigma_per_class": 32, "effective_subset_passes": 20},
+      {"per_class": 192, "unique_images": 15552, "per_sigma_per_class": 64, "effective_subset_passes": 10}
+    ],
+    "subsets_file": "/content/drive/MyDrive/hanzi81/analyses/baseline81_s42_v1/03_learning_curve/steps2430_s42_v1/subsets.json"
+  },
+  "learning_curve_protocol_from_delivered_script": {
+    "source": "Local delivered colab/learning_curve.py; this object is protocol metadata, not training measurements",
+    "script_sha256": "2b098c465e94fd1909c159c1a64b59745e914c13023e1a23d8a3445e2231272d",
+    "suite_name": "steps2430_s42_v1",
+    "seed": 42,
+    "subset_seed": 20261012,
+    "batch_size": 64,
+    "blocks_per_arm": 10,
+    "batch_attempts_per_block": 243,
+    "sample_presentations_per_block": 15552,
+    "sample_presentations_per_arm": 155520,
+    "training_split": "train",
+    "validation_split": "val_select",
+    "primary_endpoint": "Last checkpoint at the same 2430-batch budget",
+    "secondary_endpoint": "Best val_select checkpoint under the same budget",
+    "old_40_epoch_baseline_reused_as_192_image_arm": false,
+    "track_amp_skips_and_actual_optimizer_updates": true
+  },
+  "learning_curve_training_evidence": {
+    "reported_error": "NameError: name 'run_learning_curve' is not defined",
+    "same_error_reported_after_helper_restore": true,
+    "self_contained_launch_cell_provided": true,
+    "self_contained_launch_result_received": false,
+    "confirmed_completed_blocks": null,
+    "confirmed_completed_arms": null,
+    "metrics": null,
+    "note": "Preparation is confirmed. No training completion, accuracy, loss, or curve is inferred from prepared=true or the capacity notice."
+  },
+  "runtime_profile_retained": {
+    "task_status": "incomplete_per_user_request",
+    "status_date": "2026-10-13",
+    "prior_three_epoch_timing_report_received": true,
+    "purpose": "runtime_profile_only_not_scientific_results",
+    "reported_summary_path": "/content/drive/MyDrive/hanzi81/analyses/baseline81_s42_v1/06_profile/20261012T150314Z_396b4588/summary.json",
+    "environment": {
+      "python": "3.13.15", "torch": "2.11.0+cu130", "torchvision": "0.26.0+cu130",
+      "numpy": "2.1.3", "cuda": "13.0", "cudnn": 92700, "device": "cuda", "gpu": "Tesla T4"
+    },
+    "batch_size": 64,
+    "median_of_epochs_2_and_3": {
+      "train_seconds": 23.39499268399993,
+      "train_images_per_second": 664.8760462587848,
+      "validation_seconds": 7.681248952000033,
+      "validation_images_per_second": 1012.5508578047067,
+      "checkpoint_save_seconds": 0.5899270905000549,
+      "epoch_wall_seconds_including_saves": 32.2
+    },
+    "maximum_allocated_gib": 0.7974424362182617,
+    "maximum_reserved_gib": 1.509765625,
+    "three_epoch_train_call_seconds_including_setup": 96.71002333199999,
+    "note": "Preserve these earlier measurements as interim evidence; the user's latest instruction controls the task status. These are not the original 40-epoch run's wall time or peak memory."
+  },
+  "capacity_notice_reported": {
+    "date": "2026-10-13",
+    "subscription_message": "You are not subscribed.",
+    "available_compute_units": 0,
+    "free_resources_guaranteed": false,
+    "runtime_estimate_text": "At your current usage level, this runtime may last up to 2 hours 30 minutes.",
+    "user_interpretation": "额度到达上限",
+    "account_or_runtime_independently_checked": false,
+    "runtime_termination_confirmed": false,
+    "actual_compute_units_consumed": null
+  },
+  "recording_action": {
+    "record_items": [1, 3],
+    "keep_item_6_incomplete": true,
+    "new_training_started_by_this_recording_turn": false,
+    "training_code_or_data_changed": false,
+    "character_set_expansion_started": false,
+    "notes": "Local archival update only; no cloud files were downloaded or changed, and no runtime stop action was performed."
+  }
+}
